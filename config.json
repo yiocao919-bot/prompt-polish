@@ -1,0 +1,22 @@
+{
+  "provider": "deepseek",
+  "providers": {
+    "codex": {
+      "type": "codex",
+      "bin": "~/.local/node22/bin/codex",
+      "model": "",
+      "effort": "low"
+    },
+    "openai": {
+      "url": "https://api.openai.com/v1/chat/completions",
+      "model": "gpt-6-luna",
+      "extra": { "reasoning_effort": "none" }
+    },
+    "deepseek": {
+      "url": "https://api.deepseek.com/chat/completions",
+      "model": "deepseek-flash",
+      "extra": { "thinking": { "type": "disabled" } }
+    }
+  },
+  "timeout_seconds": 60
+}
